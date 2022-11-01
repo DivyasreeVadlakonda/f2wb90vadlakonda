@@ -3,4 +3,13 @@ extends layout
 block content
   h1= title
   p Pug is a templating engine for #{title}
-  button(type="button", class="btn btn-primary") Press Me
+  button(type="button", class="btn btn-primary", onclick=doBump()) Press Me
+  div(id = "bump") Bump the count 
+  script.  
+   const  count = 0;
+   const bump = 1;
+  function doBump(){
+    count = count + bump;
+    bump = bump + 1;
+    document.getElementById("bump").innerhtml  = "Count"+count+"bump"+bump;
+  }
