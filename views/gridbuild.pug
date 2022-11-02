@@ -14,11 +14,11 @@ block content
      p cols are out of range 
   - }
   - else {
-     table#outer
-    - for(let i=0; i<rows; i++) {
-        tr#middle
-         - for(let j=0; j<col; j++){
-            td = 1 + i + j*rows
+         table#outer
+         - for(let i=0; i<rows; i++) {
+           tr#middle
+             - for(let j=0; j<col; j++){
+               td = 1 + i + j*rows
+             - }
          - }
-    - }
   - }
