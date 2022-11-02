@@ -3,8 +3,8 @@ extends layout
 block content
   h1= title
   - var image_names = ["Jackal_img1" ,"Jackal_img2" ,"Jackal_img3" ,"Jackal_img4" ,"Jackal_img5"]
-  - for(let k=0;k<3;k++){
-    - let variable = Math.floor(Math.random()*5)
-    img(src=`/images/${image[variable]}`,alt="jackal", width="300px", height="300px")
-  - }
- 
+    - for(let k = 0; k < 3; k++) {
+        - let variable = Math.floor(Math.random() * 5)
+        img(src=`/images/${image[variable]}`,alt="jackal", width="300px", height="300px")
+    - }
+  
